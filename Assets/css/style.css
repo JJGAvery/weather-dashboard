@@ -5,31 +5,34 @@
     color: white;
 }
 
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
 body {
     background-image: url("../images/background.png");
 }
 
-.sidebar {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: left;
-    width: 30%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.container {
+    padding: 10px;
+    display: flex;
     color: white;
 }
-.main p{
-    color: white;
+
+.box {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 10px;
+    padding: 45px;
+    flex: auto;
+    text-align:center;
+    align-items:flex-end;
 }
 
 .card {
     border: solid 5px;
     border-radius: 5px;
     float: left;
+}
+
+#five_Day{
+    background-color: white;
+    color: black;
+    border: 80px;
 }
