@@ -11,37 +11,25 @@
     <header class="header">
         <h1>Weather Dashboard</h1>
     </header>
-    <div class="container">
         <div class="card">
-            <h3 class="card-header">Search By City</h3>
-                <form id="searchForm" class="card-body">
-                    <input name="city-name" id="cityName" type="text" class="form-input my-2" />
-                        <button type="submit" class="btn btn-secondary">Search</button>
+            <h2 class="card-header"><u>Search By City</u></h2>
+                <form id="searchForm">
+                    <input name="city-name" id="cityName"/>
+                        <button type="submit" class="btn">Search</button>
                 </form>
+                        <div id="previousSearches" class="box">
+                            <h2 class="card-header"><u>Previous Searches</u></h2>
+                            <ul id="previousSearchField"></ul>
+                        </div>
         </div>
-    </div>
-    <div class="container">
-        <div id="previousSearches" class=".box">
-             <h3 class="card-header">Previous Searches</h3>
-                <ul id="previousSearchField"></ul>
-                    <div class="cardBody d-inline-flex flex-wrap"></div>
-                    </div>
-        </div>
-    </div>
-    <div class="">
-        <div class="box" id="currentForecast">
-            <h3>Current Weather Forecast</h3>
+    <div class="aside">
+            <h2><u>Current Weather Forecast</u></h2>
                 <div id="conditions"></div>
-        </div>
     </div>
-    <div class="" >
-        <h3 id="five_Day">5-Day Forecast</h3>
-            <div class="card" id="day1"></div>
-            <div class="card" id="day2"></div>
-            <div class="card" id="day3"></div>
-            <div class="card" id="day4"></div>
-            <div class="card" id="day5"></div>
+    <div class="forecast">
+        <h2 id="five_Day"><u>5-Day Forecast</u></h2>
+            <ul id="five_day_data"></ul>
     </div>
-    <script src="./Assets/js/script.js"></script>
+    <script src="./Assets/js/script.js"></script>   
 </body>
 </html>

@@ -2,37 +2,64 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: xx-large;
     text-align: center;
-    color: white;
+    color: silver;
+    text-shadow: 5px 5px 5px blue;
 }
 
 body {
     background-image: url("../images/background.png");
+    flex: auto;
 }
 
 .container {
-    padding: 10px;
+    padding: 20px;
     display: flex;
-    color: white;
 }
 
-.box {
+.aside {
+    background-color: silver;
     border-radius: 10px;
-    border-style: solid;
-    border-width: 10px;
-    padding: 45px;
+    border: solid;
+    
+    margin-left: 420px;
     flex: auto;
     text-align:center;
-    align-items:flex-end;
+    align-items: right;
+    max-width: 950px;
 }
 
 .card {
-    border: solid 5px;
     border-radius: 5px;
+    border: solid;
     float: left;
+    background-color: silver;
+}
+.forecast{
+    margin-left: 420px;
+}
+#five_Day{
+    background-color: silver;
+    border: solid;
+    color: black;
+    flex:auto;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 950px;
 }
 
-#five_Day{
-    background-color: white;
-    color: black;
-    border: 80px;
+li{
+    list-style: none;
+}
+
+#five_day_data li{
+    background-color: silver;
+    border-radius: 10px;
+    align-items: center;
+    float:left;
+
+}
+
+.previous-search-city:hover{
+    cursor: pointer;
+    color: red;
 }
